@@ -1,0 +1,33 @@
+/* Variables */
+:root {
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+
+  /* Colors */
+  --dim-grey: #939caa;
+  --yellow-color: #fcb72b;
+  --white-color: #fff;
+  --dark-blue-color: #333a44;
+  --blue-color: #495567;
+  --light-yellow-color: #fff4df;
+}
+
+.btn {
+  padding: 0.8rem 3rem;
+  display: inline-block;
+  text-decoration: none;
+  border: 3px solid transparent;
+  color: var(--white-color);
+}
+
+.btn--primary {
+  background-color: var(--yellow-color);
+  transition: 0.4s;
+}
+
+.btn--primary:hover {
+  background-color: transparent;
+  color: var(--yellow-color);
+  border-color: var(--yellow-color);
+}

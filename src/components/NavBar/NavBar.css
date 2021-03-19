@@ -1,0 +1,140 @@
+/* Variables */
+:root {
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+
+  /* Colors */
+  --dim-grey: #939caa;
+  --yellow-color: #fcb72b;
+  --white-color: #fff;
+  --dark-blue-color: #333a44;
+  --blue-color: #495567;
+  --light-yellow-color: #fff4df;
+}
+
+.navbar__container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  width: 80%;
+  top: 68px;
+  left: 0;
+  background-color: var(--dark-blue-color);
+  transition: left 0.5s;
+}
+
+.navbar__close-menu,
+.navbar__open-menu {
+  cursor: pointer;
+}
+
+.navbar__close-menu {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+.navbar__close-menu .menu-close {
+  width: 20px;
+  opacity: 0.7;
+}
+
+.navbar__menu-list {
+  margin-left: 14%;
+  list-style-type: none;
+  margin-top: 1.5rem;
+}
+
+.navbar__menu-item {
+  margin-bottom: 1rem;
+}
+
+.navbar__menu-link {
+  font-size: 1rem;
+  color: var(--white-color);
+  text-decoration: none;
+  transition: 0.4s;
+}
+.navbar__menu-link:hover {
+  color: var(--yellow-color);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 2rem 1.5rem;
+}
+
+.navbar__logo {
+  margin: 0 auto;
+}
+
+.navbar__logo .scoot-logo {
+  width: 85px;
+}
+
+.navbar__button {
+  margin-left: 14%;
+  position: absolute;
+  bottom: 100px;
+}
+
+/* Media Desktop */
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 2rem 3rem;
+  }
+
+  .navbar__container {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    position: relative;
+    height: initial;
+    width: 100%;
+    top: initial;
+    left: initial !important;
+    background-color: initial;
+    transition: initial;
+  }
+
+  .navbar__menu-item {
+    margin-bottom: initial;
+    margin-right: 1rem;
+  }
+
+  .navbar__logo {
+    margin: initial;
+  }
+
+  .navbar__menu-link {
+    font-size: initial;
+    color: var(--dim-grey);
+    text-decoration: initial;
+    transition: initial;
+  }
+
+  .navbar__menu-list {
+    margin-left: initial;
+    list-style-type: none;
+    margin-top: initial;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+  }
+
+  .navbar__button {
+    margin-left: auto;
+    position: initial;
+    bottom: initial;
+    position: absolute;
+    right: 0;
+  }
+
+  .navbar__close-menu,
+  .navbar__open-menu {
+    display: none;
+  }
+}
