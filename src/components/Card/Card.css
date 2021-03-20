@@ -1,0 +1,61 @@
+/* Variables */
+:root {
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+
+  /* Colors */
+  --dim-grey: #939caa;
+  --yellow-color: #fcb72b;
+  --white-color: #fff;
+  --dark-blue-color: #333a44;
+  --blue-color: #495567;
+  --light-yellow-color: #fff4df;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.card__picture {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.card__picture img {
+  border-radius: 100%;
+}
+
+.card__number__container {
+  background-color: var(--yellow-color);
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card__number {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.card__title {
+  color: var(--blue-color);
+  word-spacing: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.card__description {
+  width: 70%;
+  text-align: center;
+  color: var(--dim-grey);
+}
