@@ -19,9 +19,38 @@
   background: url(../../assets/images/about-hero-mobile.jpg) no-repeat
     center/cover;
   padding-top: 3rem;
+  position: relative;
 }
 
 .main-header__title {
   font-size: 2.5rem;
   color: var(--white-color);
+}
+
+.main-header__circles {
+  display: none;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    text-align: left;
+    background: url(../../assets/images/about-hero-desktop.jpg) no-repeat
+      center/cover;
+    overflow-x: hidden;
+    height: 200px;
+  }
+
+  .main-header__title {
+    margin-left: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .main-header__circles {
+    display: block;
+    right: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

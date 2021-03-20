@@ -23,6 +23,7 @@
   left: 0;
   background-color: var(--dark-blue-color);
   transition: left 0.5s;
+  z-index: 2000;
 }
 
 .navbar__close-menu,
