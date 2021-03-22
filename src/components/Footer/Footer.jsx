@@ -7,8 +7,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__logo-container">
-          <a href="#">
-            <img src="./assets/logo-white.svg" alt="" />
+          <a href="/#">
+            <img src="./assets/logo-white.svg" alt="logo" />
           </a>
         </div>
 
@@ -32,20 +32,20 @@ const Footer = () => {
 
         <ul className="socials">
           <li>
-            <a href="#">
-              <img src="./assets/icons/facebook.svg" alt="" />
+            <a href="/#">
+              <img src="./assets/icons/facebook.svg" alt="facebook" />
             </a>
           </li>
 
           <li>
-            <a href="#">
-              <img src="./assets/icons/twitter.svg" alt="" />
+            <a href="/#">
+              <img src="./assets/icons/twitter.svg" alt="twitter" />
             </a>
           </li>
 
           <li>
-            <a href="#">
-              <img src="./assets/icons/instagram.svg" alt="" />
+            <a href="/#">
+              <img src="./assets/icons/instagram.svg" alt="instagram" />
             </a>
           </li>
         </ul>

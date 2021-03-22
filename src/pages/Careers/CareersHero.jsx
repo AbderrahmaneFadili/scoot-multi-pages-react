@@ -7,7 +7,7 @@ const CareersHero = () => {
     <section className="careers-hero">
       <div className="careers-hero__contianer">
         <div className="careers-hero__picture">
-          <img src="./assets/images/join-us.jpg" alt="" />
+          <img src="./assets/images/join-us.jpg" alt="join" />
         </div>
 
         <div className="careers-hero__content">

@@ -5,7 +5,7 @@ const Button = ({ type, children, className, onClick }) => {
   return (
     <a
       onClick={onClick}
-      href="#"
+      href="/#"
       className={`btn ${
         type === "primary" ? "btn--primary" : "btn--secondary"
       } ${className}`}

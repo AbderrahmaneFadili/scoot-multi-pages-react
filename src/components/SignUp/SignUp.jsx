@@ -10,11 +10,11 @@ const SignUp = () => {
         </div>
 
         <div className="signUp__right">
-          <a href="#">
+          <a href="/#">
             <img src="./assets/icons/app-store.svg" alt="appstore" />
           </a>
 
-          <a href="#">
+          <a href="/#">
             <img src="./assets/icons/google-play.svg" alt="playstore" />
           </a>
         </div>

@@ -23,12 +23,11 @@ const joinUsCards = [
 const JoinUs = () => {
   return (
     <section className="join-us">
-      <h1 className="join-us__title">
-        <h1>Why join us?</h1>
-      </h1>
+      <h1 className="join-us__title">Why join us?</h1>
       <div className="join-us__cards">
         {joinUsCards.map((card, i) => (
           <Card
+            key={i.toString()}
             title={card.title}
             description={card.description}
             pictureSrc={card.src}

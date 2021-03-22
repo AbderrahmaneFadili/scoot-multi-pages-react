@@ -40,18 +40,18 @@ const Features = () => {
 
       <div className="patterns">
         <div className="arrow-pattern__left">
-          <img src="./assets/patterns/left-upward-arrow.svg" alt="" />
+          <img src="./assets/patterns/left-upward-arrow.svg" alt="left" />
         </div>
         <div className="circle-pattern__left">
-          <img src="./assets/patterns/circle.svg" alt="" />
+          <img src="./assets/patterns/circle.svg" alt="left" />
         </div>
 
         <div className="arrow-pattern__right">
-          <img src="./assets/patterns/right-arrow.svg" alt="" />
+          <img src="./assets/patterns/right-arrow.svg" alt="right" />
         </div>
 
         <div className="circle-pattern__right">
-          <img src="./assets/patterns/circle.svg" alt="" />
+          <img src="./assets/patterns/circle.svg" alt="right" />
         </div>
       </div>
     </section>

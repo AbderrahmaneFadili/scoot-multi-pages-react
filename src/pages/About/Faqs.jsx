@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import "./Faqs.css";
 
 const Faqs = () => {
@@ -44,7 +44,7 @@ const Faqs = () => {
                 onClick={accordion1Click}
                 className="chevron"
                 src="./assets/icons/chevron.svg"
-                alt=""
+                alt="chevron"
               />
             </div>
             <div ref={accordion1} className={`accordion__answer`}>
@@ -62,7 +62,7 @@ const Faqs = () => {
                 onClick={accordion2Click}
                 className="chevron"
                 src="./assets/icons/chevron.svg"
-                alt=""
+                alt="chevron"
               />
             </div>
             <div ref={accordion2} className={`accordion__answer`}>
@@ -79,7 +79,7 @@ const Faqs = () => {
                 onClick={accordion3Click}
                 className="chevron"
                 src="./assets/icons/chevron.svg"
-                alt=""
+                alt="chevron"
               />
             </div>
             <div ref={accordion3} className={`accordion__answer`}>
@@ -105,7 +105,7 @@ const Faqs = () => {
                 onClick={accordion4Click}
                 className="chevron"
                 src="./assets/icons/chevron.svg"
-                alt=""
+                alt="chevron"
               />
             </div>
             <div ref={accordion4} className={`accordion__answer`}>
@@ -120,10 +120,10 @@ const Faqs = () => {
             <div className={`accordion__question`}>
               <h2 className="question">How about the rules & regulations?</h2>
               <img
-                onClick={accordion4Click}
+                onClick={accordion5Click}
                 className="chevron"
                 src="./assets/icons/chevron.svg"
-                alt=""
+                alt="chevron"
               />
             </div>
             <div ref={accordion5} className={`accordion__answer`}>
@@ -141,7 +141,7 @@ const Faqs = () => {
                 onClick={accordion6Click}
                 className="chevron"
                 src="./assets/icons/chevron.svg"
-                alt=""
+                alt="chevron"
               />
             </div>
             <div ref={accordion6} className={`accordion__answer`}>
