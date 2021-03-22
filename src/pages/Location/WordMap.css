@@ -1,0 +1,69 @@
+/* Variables */
+:root {
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+
+  /* Colors */
+  --dim-grey: #939caa;
+  --yellow-color: #fcb72b;
+  --white-color: #fff;
+  --dark-blue-color: #333a44;
+  --blue-color: #495567;
+  --light-yellow-color: #fff4df;
+  --light-grey: #f8f6f6;
+}
+
+.word-map {
+  padding: 0.5rem 0;
+}
+
+.wordl-map__container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.map {
+  background: url(../../assets/images/world-map-mobile.png) no-repeat
+    center/contain;
+  height: 399px;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.locations li {
+  padding: 1rem 0.8rem;
+  margin-bottom: 1rem;
+  background-color: var(--light-yellow-color);
+  width: 50%;
+  text-align: center;
+  color: var(--blue-color);
+}
+
+@media screen and (min-width: 768px) {
+  .locations {
+    display: none;
+  }
+
+  .map {
+    background: url(../../assets/images/world-map-tablet-dots.png) no-repeat
+      center/contain;
+    height: 500px;
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (min-width: 1010px) {
+  .map {
+    background: url(../../assets/images/world-map-desktop-dots.png) no-repeat
+      center/contain;
+    height: 600px;
+    margin: 3rem 0;
+  }
+}
