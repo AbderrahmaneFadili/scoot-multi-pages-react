@@ -1,0 +1,62 @@
+/* Variables */
+:root {
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+
+  /* Colors */
+  --dim-grey: #939caa;
+  --yellow-color: #fcb72b;
+  --white-color: #fff;
+  --dark-blue-color: #333a44;
+  --blue-color: #495567;
+  --light-yellow-color: #fff4df;
+  --light-grey: #d4e1f8;
+}
+
+.job-positions {
+  padding: 3rem 0;
+}
+
+.job-positions__container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.job-positions__job {
+  background-color: var(--light-grey);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.job-positions__job .job-positions__job__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.job__title {
+  color: var(--blue-color);
+}
+
+.job__position {
+  color: var(--dim-grey);
+}
+
+@media screen and (min-width: 793px) {
+  .job-positions__job {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .job-positions__job .job-positions__job__content {
+    justify-content: initial;
+    align-items: initial;
+  }
+}

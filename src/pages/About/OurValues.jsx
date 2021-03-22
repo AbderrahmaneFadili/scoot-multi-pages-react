@@ -27,6 +27,7 @@ const OurValues = () => {
       <div className="our-values__cards">
         {ouValuesCards.map((card, i) => (
           <Card
+            key={i.toString()}
             title={card.title}
             description={card.description}
             pictureSrc={card.src}
