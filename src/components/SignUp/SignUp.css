@@ -1,0 +1,82 @@
+/* Variables */
+:root {
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+
+  /* Colors */
+  --dim-grey: #939caa;
+  --yellow-color: #fcb72b;
+  --white-color: #fff;
+  --dark-blue-color: #333a44;
+  --blue-color: #495567;
+  --light-yellow-color: #fff4df;
+}
+
+.signUp {
+  padding: 3rem 0;
+  background-color: var(--blue-color);
+  background-image: url("../../assets/patterns/cta-circles.svg");
+  background-repeat: no-repeat;
+  background-position-x: -22rem;
+  color: var(--white-color);
+  height: 250px;
+}
+
+.signUp__container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.signUp__left {
+  margin-bottom: 2rem;
+}
+.signUp__left .signUp__title {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.signUp__right {
+  display: flex;
+}
+.signUp__right img {
+  width: 100px;
+  height: 40px;
+}
+.signUp__right img:nth-child(1) {
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .signUp__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .signUp__left {
+    width: 45%;
+    margin: 0;
+  }
+
+  .signUp__right {
+    width: 45%;
+    margin: 0;
+  }
+
+  .signUp__right img {
+    width: 130px;
+    height: 60px;
+  }
+
+  .signUp__left .signUp__title {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+}

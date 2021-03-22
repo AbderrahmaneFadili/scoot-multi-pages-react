@@ -1,0 +1,120 @@
+/* Variables */
+:root {
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+
+  /* Colors */
+  --dim-grey: #939caa;
+  --yellow-color: #fcb72b;
+  --white-color: #fff;
+  --dark-blue-color: #333a44;
+  --blue-color: #495567;
+  --light-yellow-color: #fff4df;
+  --light-grey: #f8f6f6;
+}
+
+.faqs {
+}
+
+.faqs__title {
+  color: var(--blue-color);
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.faqs__container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.faqs__left {
+  padding: 1rem 4rem 4rem;
+}
+
+.faqs__left-title {
+  text-align: center;
+  font-size: 1.6rem;
+  word-spacing: 7px;
+  color: var(--blue-color);
+}
+
+/* accordion */
+.accordion__question {
+  padding: 1rem 1rem 2rem;
+  background-color: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.question {
+  font-size: 1.2rem;
+  color: var(--blue-color);
+}
+
+.question + .chevron {
+  width: 20px;
+  cursor: pointer;
+}
+
+.question + .chevron:active {
+  opacity: 0.6;
+}
+
+.accordion__question:active {
+  background-color: var(--light-yellow-color);
+}
+
+.accordion__answer {
+  padding: 1rem 1.6rem 0;
+  max-height: 0;
+  transition: max-height 0.4s linear;
+  overflow: hidden;
+}
+
+.answer {
+  color: var(--dim-grey);
+  line-height: 1.7;
+}
+
+.accordion__question.active {
+  border-bottom: 1px solid var(--dim-grey);
+}
+
+.accordion__answer.active {
+  max-height: 300px;
+}
+
+.accordion__question:active + .accordion__answer.active {
+  background-color: var(--light-yellow-color);
+}
+
+@media screen and (min-width: 1010px) {
+  .faqs__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .faqs__container .faqs__left {
+    width: 50%;
+    padding: 0;
+  }
+
+  .faqs__container .faqs__left .faqs__left-title {
+    text-align: left;
+    width: 100%;
+    font-size: 1.7rem;
+    margin-top: 20px;
+  }
+
+  .faqs__container .faqs__right {
+    width: 70%;
+  }
+}
