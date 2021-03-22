@@ -4,6 +4,8 @@ import Features from "./Features";
 import OurValues from "./OurValues";
 import Faqs from "./Faqs";
 import SignUp from "../../components/SignUp/SignUp";
+import Footer from "../../components/Footer/Footer";
+
 const About = () => {
   return (
     <main>
@@ -12,6 +14,7 @@ const About = () => {
       <OurValues />
       <Faqs />
       <SignUp />
+      <Footer />
     </main>
   );
 };
