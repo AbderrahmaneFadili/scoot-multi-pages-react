@@ -8,7 +8,10 @@ const Footer = () => {
       <div className="footer__container">
         <div className="footer__logo-container">
           <a href="/#">
-            <img src="./assets/logo-white.svg" alt="logo" />
+            <img
+              src={require("../../assets/logo-white.svg").default}
+              alt="logo"
+            />
           </a>
         </div>
 

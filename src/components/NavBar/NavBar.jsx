@@ -22,7 +22,11 @@ const NavBar = () => {
 
       {/* Scoot Logo */}
       <Link to="/" className="navbar__logo">
-        <img src="./assets/Logo.svg" alt="logo" className="scoot-logo" />
+        <img
+          src={require("../../assets/logo.svg").default}
+          alt="logo"
+          className="scoot-logo"
+        />
       </Link>
 
       {/* Navbar Container */}
