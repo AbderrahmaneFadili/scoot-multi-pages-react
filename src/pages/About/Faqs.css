@@ -54,17 +54,18 @@
   margin-top: 1rem;
 }
 
-.question {
+.accordion__question .question {
   font-size: 1.2rem;
   color: var(--blue-color);
+  width: 100%;
 }
 
-.question + .chevron {
+.accordion__question .question + .chevron {
   width: 20px;
   cursor: pointer;
 }
 
-.question + .chevron:active {
+.accordion__question .question + .chevron:active {
   opacity: 0.6;
 }
 
